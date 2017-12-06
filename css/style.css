@@ -1,5 +1,5 @@
 nav{
-  background-color: lightgrey;
+  background-color: firebrick;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,6 +17,11 @@ nav{
 
 nav a{
   text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color: lightgrey;
 }
 
 nav ul{
@@ -26,13 +31,16 @@ nav ul{
 
 nav li {
   display: inline-block;
-  width: 24%;
+  width: 19%;
   text-align: center;
 }
 
-#home {
-  margin-top: 75px;
+#home, #keepers, #defenders, #midfielders, #forwards {
+  padding: 45px;
+
+
 }
+
 
 #gallery > .row > div {
   padding-bottom: 30px;
@@ -41,8 +49,19 @@ nav li {
 .img-responsive {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: inline;
 }
+
+#team img {
+  height: auto;
+  width: 200px;
+}
+
+h5{
+   display: inline-block;
+   min-width: 120px;
+   color: firebrick;
+ }
 
 /*media query section*/
 
