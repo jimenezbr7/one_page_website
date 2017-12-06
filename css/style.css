@@ -35,12 +35,18 @@ nav li {
   text-align: center;
 }
 
-#home, #keepers, #defenders, #midfielders, #forwards {
-  padding: 45px;
-
-
+section {
+  padding-top: 45px;
+  margin-top: -45px;
 }
 
+#keepers{
+  height: 500px;
+}
+
+#defenders{
+  height: 1300px;
+}
 
 #gallery > .row > div {
   padding-bottom: 30px;
