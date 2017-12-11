@@ -1,9 +1,4 @@
-/*body {
-  background-image: url("../img/emirates.jpg");
-  background-repeat: repeat-y;
-}*/
-
-nav{
+nav {
   background-color: firebrick;
   position: fixed;
   top: 0;
@@ -14,24 +9,31 @@ nav{
   z-index: 10;
 }
 
-#nav-btn{
+#nav-btn {
   display: none;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 15;
+  background-image: url("../img/badge.jpeg");
 }
 
-nav a{
+button {
+  width: 42px;
+  height: 50px;
+  border-style: solid;
+}
+
+nav a {
   text-decoration: none;
   color: white;
 }
 
-nav a:hover{
+nav a:hover {
   color: lightgrey;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   margin: 0;
 }
@@ -73,31 +75,36 @@ section > div > h5 {
   width: 200px;
 }
 
-h5{
+h5 {
    display: inline-block;
    min-width: 120px;
    color: firebrick;
  }
 
  body {
-   transition: padding 1s linear;
+   transition: all 1s;
+   margin-left: 5px;
  }
 
 
 /*media query section*/
 
+
+
 @media all and (max-width: 768px){
-  nav{
+  nav {
     display: none;
   }
 
-  nav li{
+  nav li {
     display: inline-block;
     width: 19%;
     text-align: center;
+    padding-right: 35px;
+    font-size: 14px;
   }
 
-  #nav-btn{
+  #nav-btn {
     display: block;
   }
 
@@ -107,5 +114,20 @@ h5{
 
   .padded {
     padding-top: 50px;
+  }
+}
+
+@media all and (max-width: 480px){
+  nav li {
+    width: 24%;
+    float: left;
+  }
+
+  #navhome {
+    display: none;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }
